@@ -1,0 +1,209 @@
+@font-face {
+    font-family: myfont;
+    src: url(fonts/fon.ttf.ttf);
+    font-family: gfont;
+    src: url(fonts/LEMONMILK-Bold.otf);
+}
+body {
+    font-family: myfont;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1e1e2f;
+    color: #fff;
+}
+header {
+    font-family: gfont;
+    background-color: #000000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    height: 60px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+nav ul.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: center;
+    height: 100%;
+}
+nav ul.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+nav ul.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: normal;
+    position: relative;
+}
+nav ul.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #f0f0f0;
+    transition: width 0.3s ease-in-out;
+}
+nav ul.nav-links li a:hover::after {
+    width: 100%;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease-in-out;
+}
+.social-icon:hover {
+    transform: scale(1.1);
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.section {
+    padding: 3rem 0;
+}
+h1, h2, h3 {
+    font-family: gfont;
+    text-align: center;
+}
+h1.typewriter {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+h3.hover-grow {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+h3.hover-grow:hover {
+    transform: scale(1.1);
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.profile-pic {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.profile-pic.move-effect:hover {
+    transform: translateY(-10px) rotate(-5deg);
+}
+.logo {
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.project {
+    background-color: #282846;
+    padding: 0.8rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.project-details {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.btn {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.section-separator {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 3px solid #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #f0f0f0; }
+}
