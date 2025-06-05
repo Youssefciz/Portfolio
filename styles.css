@@ -162,6 +162,11 @@ p {
     text-align: left;
     font-size: 1rem;
     line-height: 1.6;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.project-details li {
+    font-family: 'Roboto', Arial, sans-serif;
 }
 .btn {
     display: inline-block;
