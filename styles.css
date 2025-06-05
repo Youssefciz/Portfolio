@@ -118,6 +118,8 @@ p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
 }
 .profile-pic {
     width: 450px;
