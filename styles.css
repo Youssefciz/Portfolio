@@ -167,6 +167,12 @@ p {
 
 .project-details li {
     font-family: 'Roboto', Arial, sans-serif;
+    margin-left: 1.2em;
+}
+
+.project-details li::marker {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.1rem;
 }
 .btn {
     display: inline-block;
