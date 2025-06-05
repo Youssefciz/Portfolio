@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'LemonMilkBold';
+    src: url('fonts/lemonmilk-bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,6 +23,17 @@ header {
     align-items: center;
     font-size: 1.2rem;
     height: 60px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-family: 'LemonMilkBold', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
 }
 nav {
     display: flex;
