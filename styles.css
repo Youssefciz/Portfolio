@@ -14,7 +14,7 @@ body {
     color: #fff;
 }
 header {
-    font-family: 'LemonMilkBold', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #000000;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -99,7 +99,7 @@ nav ul.nav-links li a:hover::after {
     padding: 3rem 0;
 }
 h1, h2, h3 {
-    font-family: 'LemonMilkBold', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 h1.typewriter {
