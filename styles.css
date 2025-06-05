@@ -30,11 +30,6 @@ header {
     align-items: center;
 }
 
-.site-name {
-    font-family: 'LemonMilkBold', Arial, sans-serif;
-    font-size: 1.5rem;
-    color: #fff;
-}
 nav {
     display: flex;
     justify-content: center;
