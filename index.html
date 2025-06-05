@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Youssef Sadek, a computer science student showcasing projects and contact information.">
+    <meta property="og:title" content="Youssef Sadek - Portfolio">
+    <meta property="og:description" content="Explore my projects and get in touch.">
+    <meta property="og:image" content="images/youssefpic.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://youssefciz.github.io/">
     <title>Youssef Sadek - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -31,7 +37,7 @@
       
     <section id="about" class="section">
         <div class="container fade-in">
-            <img src="images/youssefpic.jpg" alt="Your Picture" class="profile-pic move-effect">
+            <img loading="lazy" src="images/youssefpic.jpg" alt="Your Picture" class="profile-pic move-effect">
             <h1 class="typewriter">Hi, I'm Youssef Sadek</h1>
             <h2>About Me</h2>
             <p>🌍 Originally from Egypt, I spent my childhood in Kuwait where my father pursued his engineering career. In 2019, I embarked on a new journey to the United States to pursue higher education.</p>
@@ -53,7 +59,7 @@
         <div class="container fade-in">
             <h2>Projects</h2>
             <div class="project hover-grow">
-                <img src="images/job.png" alt="Job Scraper Project" class="project-img">
+                <img loading="lazy" src="images/job.png" alt="Job Scraper Project" class="project-img">
                 <h3>Job Scraper Web Application</h3>
                 <p>Technologies Used: Python, Flask, BeautifulSoup, Requests, Bootstrap</p>
                 <ul class="project-details">
@@ -68,7 +74,7 @@
             </div>
             
             <div class="project hover-grow">
-                <img src="images/scanner.png" alt="Vulnerability Scanner Project" class="project-img">
+                <img loading="lazy" src="images/scanner.png" alt="Vulnerability Scanner Project" class="project-img">
                 <h3>Vulnerability Scanner</h3>
                 <p>Technologies Used: Python, Requests, Multithreading</p>
                 <ul class="project-details">
@@ -87,6 +93,15 @@
         <div class="container fade-in">
             <h2>Contact Me</h2>
             <p>If you'd like to get in touch, please feel free to reach out via the social media platforms above or send me an email at <a href="mailto:youssefsadekyis@gmail.com">youssefsadekyis@gmail.com</a>.</p>
+            <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
     
