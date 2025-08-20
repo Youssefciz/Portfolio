@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Youssef Sadek, a computer science student showcasing projects and contact information.">
-    <meta property="og:title" content="Youssef Sadek - Portfolio">
-    <meta property="og:description" content="Explore my projects and get in touch.">
+    <meta name="description" content="Portfolio of Youssef Sadek, a cybersecurity-focused computer science student showcasing projects and technical skills.">
+    <meta property="og:title" content="Youssef Sadek Cybersecurity Portfolio">
+    <meta property="og:description" content="Explore my cybersecurity projects and technical expertise.">
     <meta property="og:image" content="images/youssefpic.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://youssefciz.github.io/">
-    <title>Youssef Sadek - Portfolio</title>
+    <title>Youssef Sadek Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/githubpicc.ico">
 </head>
 <body>
+    <!-- Matrix Background -->
+    <div class="matrix-bg" id="matrixBg"></div>
+    
     <header>
         <div class="container header-container">
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about" class="scroll-link">About</a></li>
+                    <li><a href="#skills" class="scroll-link">Skills</a></li>
                     <li><a href="#projects" class="scroll-link">Projects</a></li>
                     <li><a href="#contact" class="scroll-link">Contact</a></li>
                     <li><a href="documents/Youssef resume.pdf" target="_blank">Resume</a></li>
@@ -36,62 +41,111 @@
       
     <section id="about" class="section">
         <div class="container fade-in">
-            <img loading="lazy" src="images/youssefpic.jpg" alt="Your Picture" class="profile-pic move-effect">
+            <img loading="lazy" src="images/youssefpic.jpg" alt="Youssef Sadek" class="profile-pic">
             <h1 class="typewriter">Hi, I'm Youssef Sadek</h1>
-            <h2>About Me</h2>
-            <p>🌍 Originally from Egypt, I spent my childhood in Kuwait where my father pursued his engineering career. In 2019, I embarked on a new journey to the United States to pursue higher education.</p>
-            <p>📚 My fascination with computers began at an early age and only intensified during my high school years. Taking my first programming and computer science classes ignited a passion within me that continues to drive my career aspirations today.</p>
-            <p>🎓 Currently pursuing my degree in Computer Science, I am eagerly preparing myself to transition into the professional world.</p>
+            
+            
+            <div class="about-content">
+                <p>Originally from Egypt, I spent my childhood in Kuwait where my father pursued his engineering career. In 2019, I embarked on a new journey to the United States to pursue higher education.</p>
+                <p>My fascination with computers began at an early age and only intensified during my high school years. Taking my first programming and computer science classes ignited a passion within me that continues to drive my career aspirations today.</p>
+                <p>Currently pursuing my degree in Computer Science with a focus on cybersecurity, I am eagerly preparing myself to transition into the professional world of cybersecurity.</p>
+            </div>
             
             <div class="section-separator"></div>
 
             <h2>Education</h2>
             <img src="images/njit.png" alt="NJIT Logo" class="logo">
-            <p>New Jersey Institute of Technology<br>
-               Expected Graduation: May 2026<br>
-                Computer Science, B.S.<br>
-                Relevant Coursework: Cyber Security, Operating Systems, Computer Networks, Intensive Programming in Linux.</p>
+            <div class="about-content">
+                                    <p><strong>New Jersey Institute of Technology</strong><br>
+                       Expected Graduation: May 2026<br>
+                       Computer Science, B.S.<br>
+                       Relevant Coursework: Cryptography, Operating Systems, Computer Networks, Network Security, Intensive Programming in Linux, Data Structures & Algorithms</p>
+            </div>
         </div>
     </section>
-            <div class="section-separator"></div>
+
+    <div class="section-separator"></div>
+
+    <section id="skills" class="section">
+        <div class="container fade-in">
+            <h2>Technical Skills</h2>
+            <div class="skills-section">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Bash/Shell</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Cybersecurity Tools</h4>
+                    <ul class="skill-list">
+                        <li>OpenVAS</li>
+                        <li>Nmap</li>
+                        <li>Wireshark</li>
+                        <li>Metasploit</li>
+                        <li>Kali Linux</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Security Concepts</h4>
+                    <ul class="skill-list">
+                        <li>Penetration Testing</li>
+                        <li>Vulnerability Assessment</li>
+                        <li>Network Security</li>
+                        <li>Cryptography</li>
+                        <li>Incident Response</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-separator"></div>
+
     <section id="projects" class="section">
         <div class="container fade-in">
             <h2>Projects</h2>
-            <div class="project hover-grow">
+            <div class="project">
+                <h3>Enterprise Global Network Scanning & Vulnerability Monitoring System</h3>
+                <p><strong>Technologies:</strong> JavaScript, TypeScript, Python, NestJS, Prisma, PostgreSQL, Node.js, Raspberry Pi, Masscan, OpenVAS, Tailscale, PagerDuty</p>
+                <p>I built an enterprise-scale vulnerability monitoring platform designed to secure a distributed global infrastructure. The system runs lightweight Raspberry Pi agents at gallery locations worldwide, all managed through a centralized NestJS/Prisma backend with secure RBAC authentication and PostgreSQL persistence.</p>
+                <p>Agents communicate securely over Tailscale private networks, automatically discover local networks using masscan, and extract different /24 subnets from each office network. Each /24 subnet is then scanned individually with OpenVAS for comprehensive vulnerability assessment. The system supports incremental result saving for long-running scans, scaling reliably to 50k+ IPs per agent. A dedicated web UI enables intuitive scan scheduling and recurring automation, while PagerDuty integration provides enterprise level alerting for vulnerabilities, agent downtime, and infrastructure changes.</p>
+                <p><em>This project gave me hands on experience delivering a robust, enterprise ready distributed security solution, combining secure networking, scalable architecture, and automated vulnerability management.</em></p>
+                <span class="project-badge">Enterprise Project</span>
+            </div>
+            
+            <div class="project">
                 <img loading="lazy" src="images/job.png" alt="Job Scraper Project" class="project-img">
                 <h3>Job Scraper Web Application</h3>
-                <p>Technologies Used: Python, Flask, BeautifulSoup, Requests, Bootstrap</p>
-                <ul class="project-details">
-                    <li>Developed a web application that scrapes job listings from LinkedIn to provide users with relevant job opportunities.</li>
-                    <li>Implemented web scraping techniques using BeautifulSoup and Requests to parse HTML and extract job data.</li>
-                    <li>Designed a responsive web interface with Bootstrap for displaying job listings.</li>
-                    <li>Created a JSON API endpoint to provide job listing data in a structured format.</li>
-                    <li>Handled HTTP response status codes to manage and log errors effectively.</li>
-                    <li>Gained experience with RESTful API development and client-side JavaScript for AJAX requests.</li>
-                </ul>
+                <p><strong>Technologies:</strong> Python, Flask, BeautifulSoup, Requests, Bootstrap</p>
+                <p>I developed a web application that scrapes job listings from LinkedIn to provide users with relevant job opportunities. The application implements web scraping techniques using BeautifulSoup and Requests to parse HTML and extract job data, while providing a responsive web interface built with Bootstrap for displaying job listings.</p>
+                <p>The system includes a JSON API endpoint to provide job listing data in a structured format, handles HTTP response status codes to manage and log errors effectively, and demonstrates experience with RESTful API development and client-side JavaScript for AJAX requests.</p>
                 <a href="https://github.com/Youssefciz/Job_Scraper_project" target="_blank" class="btn">View on GitHub</a>
             </div>
             
-            <div class="project hover-grow">
+            <div class="project">
                 <img loading="lazy" src="images/scanner.png" alt="Vulnerability Scanner Project" class="project-img">
                 <h3>Vulnerability Scanner</h3>
-                <p>Technologies Used: Python, Requests, Multithreading</p>
-                <ul class="project-details">
-                    <li>Created a Python tool to scan websites for security vulnerabilities.</li>
-                    <li>Utilized multithreading for efficient scanning.</li>
-                    <li>Added customizable headers and random user-agent selection.</li>
-                    <li>Managed multiple URL targets and implemented robust error handling.</li>
-                    <li>Gained experience in cybersecurity and web application security.</li>
-                </ul>
+                <p><strong>Technologies:</strong> Python, Requests, Multithreading</p>
+                <p>I created a Python tool to scan websites for security vulnerabilities, utilizing multithreading for efficient scanning across multiple targets. The scanner includes customizable headers and random user-agent selection to avoid detection, while managing multiple URL targets with robust error handling.</p>
+                <p>This project provided hands-on experience in cybersecurity and web application security, demonstrating practical knowledge of vulnerability assessment techniques and security tool development.</p>
                 <a href="https://github.com/Youssefciz/Vulnerability_Scanner" target="_blank" class="btn">View on GitHub</a>
             </div>
         </div>
     </section>
-                    <div class="section-separator"></div>
+
+    <div class="section-separator"></div>
+
     <section id="contact" class="section">
         <div class="container fade-in">
             <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, please feel free to reach out via the social media platforms above or send me an email at <a href="mailto:youssefsadekyis@gmail.com">youssefsadekyis@gmail.com</a>.</p>
+            <p>If you'd like to get in touch, please feel free to reach out via the social media platforms above or send me an email at <a href="mailto:youssefsadekyis@gmail.com" style="color: #00ffff;">youssefsadekyis@gmail.com</a>.</p>
             <form class="contact-form" action="https://formspree.io/f/xqabayoe" method="POST">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -99,7 +153,7 @@
                 <input type="email" id="email" name="_replyto" required>
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
