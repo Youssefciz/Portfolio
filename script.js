@@ -255,6 +255,9 @@ function addConsoleEffect() {
 
 // Initialize console effect
 document.addEventListener("DOMContentLoaded", function () {
+  // Ensure page starts at top
+  window.scrollTo(0, 0);
+
   setTimeout(addConsoleEffect, 1000);
   initializeTerminal();
   initializeSkillBars();

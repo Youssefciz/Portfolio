@@ -13,12 +13,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Account for fixed header */
+}
+
 body {
     font-family: 'JetBrains Mono', monospace;
     background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #1a1a1a 100%);
     color: #00ff41;
     overflow-x: hidden;
     position: relative;
+    scroll-behavior: smooth;
 }
 
 /* Matrix Background Effect */
