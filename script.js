@@ -320,8 +320,12 @@ Security:     Vulnerability Assessment ███████████ 95%
               Masscan █████████ 90%
 
 Frameworks:   NestJS ████████ 85%
+              Next.js ████████ 80%
               React ███████ 75%
               Node.js ████████ 85%
+              Express ████████ 80%
+              MongoDB ███████ 75%
+              Tailwind CSS █████████ 85%
               Prisma ███████ 75%
 
 Tools:        Git ████████ 85%
@@ -339,12 +343,18 @@ Tools:        Git ████████ 85%
     │ 50,000+ hosts scanning capability
     │ 30% throughput improvement
     
-[2] Job Scraper Web Application
+[2] GnosisLens - Oracle of Wisdom (Backend)
+    │ Node.js, Express, MongoDB, Passport.js
+    │ AI-powered travel scam detection
+    │ Gemini AI API integration
+    │ Backend-frontend integration
+    
+[3] Job Scraper Web Application
     │ Python, Flask, BeautifulSoup
     │ Automated LinkedIn job extraction
     │ RESTful API with Bootstrap UI
     
-[3] Vulnerability Scanner Tool
+[4] Vulnerability Scanner Tool
     │ Python, Multithreading
     │ Custom security assessment tool
     │ Multi-target scanning capabilities`,
