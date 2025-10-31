@@ -362,7 +362,7 @@ Tools:        Git ████████ 85%
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 🎓 New Jersey Institute of Technology
    Computer Science, B.S.
-   Expected Graduation: May 2026
+   Expected Graduation: Dec 2026
    
 📚 Relevant Coursework:
    • Cryptography
@@ -382,7 +382,7 @@ Tools:        Git ████████ 85%
 🐱 GitHub:   github.com/Youssefciz
 
 Available for cybersecurity internships and 
-full-time opportunities starting May 2026.`,
+full-time opportunities starting Dec 2026.`,
     },
 
     scan: {
@@ -518,7 +518,7 @@ drwxr-xr-x  education/
 Name: Youssef Sadek
 Major: Computer Science (Cybersecurity Focus)
 School: New Jersey Institute of Technology
-Expected Graduation: May 2026
+Expected Graduation: Dec 2026
 
 Experience:
 • Security Intern @ David Zwirner
